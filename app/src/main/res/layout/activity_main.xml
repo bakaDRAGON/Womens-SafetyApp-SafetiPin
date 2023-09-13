@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Constarintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonSOS"
+        android:layout_width="380dp"
+        android:layout_height="280dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:text="Send SOS"
+        android:textSize="34sp"
+        app:cornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@null" />
+
+    <Button
+        android:id="@+id/buttonSafeRoutes"
+        android:layout_width="154dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="30dp"
+        android:text="Safe Routes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonNearestPolice"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSOS" />
+
+    <Button
+        android:id="@+id/buttonNearestPolice"
+        android:layout_width="154dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="30dp"
+        android:text="Nearest Police Station"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSafeRoutes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSOS" />
+
+    <Button
+        android:id="@+id/buttonFakeCall"
+        android:layout_width="154dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="50dp"
+        android:text="Fake Call"
+        app:layout_constraintEnd_toStartOf="@+id/buttonWomensSelfHelp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNearestPolice" />
+
+    <Button
+        android:id="@+id/buttonWomensSelfHelp"
+        android:layout_width="154dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="50dp"
+        android:text="Womens Self Help Group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonFakeCall"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSafeRoutes" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/Constarintlayout">
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home"
+            app:cornerRadius="4dp"
+            app:shapeAppearance="@null" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Contact Groups"
+            app:cornerRadius="4dp"
+            app:shapeAppearance="@null" />
+
+        <Button
+
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile"
+            app:cornerRadius="4dp"
+            app:shapeAppearance="@null" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
